@@ -1,0 +1,25 @@
+# Environment variables and API keys
+.env
+
+# Python virtual environment
+AI_ART_GENERATOR/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated images and data
+outputs/
+*.csv
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.qodo
