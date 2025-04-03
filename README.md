@@ -51,30 +51,6 @@ OPENAI_API_KEY=your_openai_api_key_here
 streamlit run app.py
 ```
 
-## Deployment to Streamlit Cloud
-
-1. Push your code to GitHub:
-```
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/ai-art-generator.git
-git push -u origin main
-```
-
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud) and sign in with your GitHub account.
-
-3. Click "New app" and select your GitHub repository.
-
-4. Set the main file path to `app.py`.
-
-5. In the "Advanced settings" section, add your OpenAI API key as a secret:
-```
-OPENAI_API_KEY = "your_openai_api_key_here"
-```
-
-6. Click "Deploy" and wait for your app to be deployed.
-
 ## System Requirements
 
 - Python 3.8+
