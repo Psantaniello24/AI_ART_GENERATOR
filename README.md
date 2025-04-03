@@ -4,7 +4,7 @@ A Python application that generates AI art using OpenAI's DALL-E models with a u
 
 ## Example Generation
 
-![Violet Ferrari generated with DALL-E 3](https://github.com/yourusername/ai-art-generator/raw/main/example_images/violet_ferrari.jpg)
+![Violet Ferrari generated with DALL-E 3](https://github.com/yourusername/ai-art-generator/raw/main/example_images/violet_ferrari.png)
 
 *A stunning violet Ferrari generated using DALL-E 3 with the 3D Render style*
 
