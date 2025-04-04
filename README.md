@@ -27,7 +27,7 @@ A Python application that generates AI art using OpenAI's DALL-E models with a u
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/ai-art-generator](https://github.com/Psantaniello24/AI_ART_GENERATOR.git
+git clone https://github.com/Psantaniello24/AI_ART_GENERATOR.git
 cd AI-ART-GENERATOR
 ```
 
