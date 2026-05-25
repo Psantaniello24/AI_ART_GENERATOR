@@ -168,7 +168,7 @@ def main():
         }
         
         # Show resolution options only for DALL-E 3
-        if model == "dall-e-3":
+        if model == "gpt-image-1":
             resolution = st.selectbox("Select resolution", list(resolution_options.keys()))
             size = resolution_options[resolution]
         else:
@@ -178,7 +178,7 @@ def main():
             size = "1024x1024"
         
         # Quality options (only for DALL-E 3)
-        if model == "dall-e-3":
+        if model == "gpt-image-1":
             quality = st.selectbox("Image quality", ["standard", "hd"])
         else:
             quality = "standard"
