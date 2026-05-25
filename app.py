@@ -96,11 +96,23 @@ def generate_image_dalle(client, prompt, style_prompt, model, size, quality="hig
     )
     
     # Get the image URL from the response
-    image_url = response.data[0].url
+    image_data = response.data[0].url
+    # Case 1: URL returned
+    if hasattr(image_data, "url") and image_data.url:
+        response = requests.get(image_data.url)
+        image = Image.open(BytesIO(response.content))
+
+    # Case 2: base64 returned
+    elif hasattr(image_data, "b64_json") and image_data.b64_json:
+        image_bytes = base64.b64decode(image_data.b64_json)
+        image = Image.open(BytesIO(image_bytes))
+
+    else:
+        raise Exception(f"No image returned: {response}")
     
     # Download the image
-    response = requests.get(image_url)
-    image = Image.open(BytesIO(response.content))
+    #response = requests.get(image_url)
+    #image = Image.open(BytesIO(response.content))
     
     return image
 
