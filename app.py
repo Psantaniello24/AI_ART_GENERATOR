@@ -10,6 +10,7 @@ from datetime import datetime
 import io
 import re
 import requests
+import base64
 from io import BytesIO
 from openai import OpenAI
 from dotenv import load_dotenv
