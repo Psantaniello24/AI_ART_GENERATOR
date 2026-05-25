@@ -42,8 +42,8 @@ ART_STYLES = {
 
 # DALL-E models
 DALLE_MODELS = {
-    "DALL-E 3": "dall-e-3",
-    "DALL-E 2": "dall-e-2"
+    "DALL-E 3": "gpt-image-1",
+    "DALL-E 2": "gpt-image-1"
 }
 
 # NSFW content filter words
