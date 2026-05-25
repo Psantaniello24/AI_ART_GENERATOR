@@ -82,7 +82,7 @@ def save_to_history(prompt, style, model, resolution, filename):
     history.to_csv("generation_history.csv", index=False)
 
 # Function to generate image using OpenAI's DALL-E API
-def generate_image_dalle(client, prompt, style_prompt, model, size, quality="standard"):
+def generate_image_dalle(client, prompt, style_prompt, model, size, quality="high"):
     # Combine prompt with style
     full_prompt = f"{prompt}, {style_prompt}"
     
