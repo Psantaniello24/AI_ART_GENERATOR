@@ -115,7 +115,7 @@ def get_api_key():
 
 # Streamlit UI
 def main():
-    st.set_page_config(page_title="AI Art Generator", layout="wide")
+    st.set_page_config(page_title="AI Art Generator 4Ery", layout="wide")
     
     # Get API key from various sources
     api_key = get_api_key()
