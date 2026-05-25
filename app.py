@@ -178,9 +178,9 @@ def main():
         
         # Quality options (only for DALL-E 3)
         if model == "gpt-image-1":
-            quality = st.selectbox("Image quality", ["standard", "hd"])
+            quality = st.selectbox("Image quality", ["medium", "high"])
         else:
-            quality = "standard"
+            quality = "high"
         
         # Generate button
         generate_button = st.button("Generate Image", type="primary")
