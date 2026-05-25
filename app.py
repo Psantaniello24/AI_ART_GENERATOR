@@ -96,7 +96,7 @@ def generate_image_dalle(client, prompt, style_prompt, model, size, quality="hig
     )
     
     # Get the image URL from the response
-    image_data = response.data[0].url
+    image_data = response.data[0]
     # Case 1: URL returned
     if hasattr(image_data, "url") and image_data.url:
         response = requests.get(image_data.url)
